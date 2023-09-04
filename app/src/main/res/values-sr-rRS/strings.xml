@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logOut">Odjavi se</string>
+    <string name="calendar">Kalendar</string>
+    <string name="daily_plan">Dnevni plan</string>
+    <string name="profile">Profil</string>
+    <string name="changePassword">Promeni lozinku</string>
+    <string name="enter_new_password">Ukucaj novu lozinku</string>
+    <string name="day1">Pon</string>
+    <string name="day2">Uto</string>
+    <string name="day3">Sre</string>
+    <string name="day4">Cet</string>
+    <string name="day5">Pet</string>
+    <string name="day6">Sub</string>
+    <string name="day7">Ned</string>
+    <string name="pastObligations">Prikazi prosle obaveze</string>
+    <string name="addNewObligation">Dodaj novu obavezu</string>
+    <string name="lowBtn">Nisko</string>
+    <string name="midBtn">Srednje</string>
+    <string name="highBtn">Visoko</string>
+</resources>

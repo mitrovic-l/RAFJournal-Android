@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nyanza"
+    android:clickable="true"
+    android:id="@+id/fragment_planner">
+
+    <TextView
+        android:id="@+id/monthDailyPlanTV"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:paddingVertical="5px"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60px"
+        app:layout_constraintBottom_toTopOf="@id/showPastCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/showPastCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="628dp"
+        android:buttonTint="@color/black"
+        android:layoutDirection="rtl"
+        android:paddingLeft="50px"
+        android:text="Show past obligations"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPastCheckBox"
+        app:layout_constraintVertical_bias="0.078">
+
+        <TextView
+            android:id="@+id/lowTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/calendar_low_day_box"
+            android:paddingVertical="10dp"
+            android:text="@string/lowBtn"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/midTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/calendar_mid_day_box"
+            android:paddingVertical="10dp"
+            android:text="@string/midBtn"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/highTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/calendar_high_day_box"
+            android:paddingVertical="10dp"
+            android:text="@string/highBtn"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45px" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="409dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/obligationSearchET"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPastCheckBox" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDailyPlan"
+        android:layout_width="409dp"
+        android:layout_height="540dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/baseline_add_circle_24"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

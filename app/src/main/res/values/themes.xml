@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Dnevnjak" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/moonstone</item>
+        <item name="colorPrimaryVariant">@color/violet</item>
+        <item name="colorOnPrimary">@color/violet</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/midgreen</item>
+        <item name="colorSecondaryVariant">@color/violet</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logOut">Log Out</string>
+    <string name="calendar">Calendar</string>
+    <string name="daily_plan">Daily Plan</string>
+    <string name="profile">Profile</string>
+    <string name="changePassword">Change password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="day1">Mon</string>
+    <string name="day2">Tue</string>
+    <string name="day3">Wed</string>
+    <string name="day4">Thu</string>
+    <string name="day5">Fri</string>
+    <string name="day6">Sat</string>
+    <string name="day7">Sun</string>
+    <string name="pastObligations">Show past obligations</string>
+    <string name="addNewObligation">Add new obligation</string>
+    <string name="lowBtn">Low</string>
+    <string name="midBtn">Mid</string>
+    <string name="highBtn">High</string>
+</resources>
